@@ -65,6 +65,17 @@
 				<version>2.5</version>
 				<configuration>
 					<webXml>WEB-INF\web.xml</webXml>
+					<webResources>
+						<resource>
+							<targetPath>WEB-INF</targetPath>
+							<directory>WEB-INF</directory>
+						</resource>
+						<resource>
+							<targetPath>css</targetPath>
+							<!-- this is relative to the pom.xml directory -->
+							<directory>css</directory>
+						</resource>
+					</webResources>
 				</configuration>
 			</plugin>
 		</plugins>

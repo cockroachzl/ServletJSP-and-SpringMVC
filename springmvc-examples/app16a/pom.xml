@@ -30,10 +30,29 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.5.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<webXml>WEB-INF\web.xml</webXml>
+					<webResources>
+						<resource>
+							<targetPath>WEB-INF</targetPath>
+							<directory>WEB-INF</directory>
+						</resource>
+						<resource>
+							<targetPath>css</targetPath>
+							<!-- this is relative to the pom.xml directory -->
+							<directory>css</directory>
+						</resource>
+					</webResources>
 				</configuration>
 			</plugin>
 		</plugins>

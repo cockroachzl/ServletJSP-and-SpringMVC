@@ -10,4 +10,11 @@ Sample\ code/
 *.jar
 *.war
 *.class
+*.iml
+.idea
+out/
+*SNAPSHOT/
+maven-archiver/
+maven-status/
+
 
