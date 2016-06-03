@@ -26,11 +26,11 @@
     <bean id="conversionService" 
             class="org.springframework.context.support.ConversionServiceFactoryBean">
         <property name="converters">
-            <list>
+            <set>
                 <bean class="app20a.converter.StringToDateConverter">
                     <constructor-arg type="java.lang.String" value="MM-dd-yyyy"/>
                 </bean>
-            </list>
+            </set>
         </property>
     </bean>
 </beans>
